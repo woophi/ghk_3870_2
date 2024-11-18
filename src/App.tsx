@@ -2,7 +2,7 @@ import { ButtonMobile } from '@alfalab/core-components/button/mobile';
 import { Gap } from '@alfalab/core-components/gap';
 import { Typography } from '@alfalab/core-components/typography';
 import { useCallback, useState } from 'react';
-import burger from './assets/burger.png';
+import home from './assets/home.png';
 import { LS, LSKeys } from './ls';
 import { appSt } from './style.css';
 import { ThxLayout } from './thx/ThxLayout';
@@ -27,12 +27,12 @@ export const App = () => {
     <>
       <div className={appSt.container}>
         <Typography.TitleResponsive style={{ marginTop: '5rem' }} tag="h1" view="medium" font="system" weight="semibold">
-          Траты на фастфуд увеличились
+          Мечтаете закрыть ипотеку побыстрее?
         </Typography.TitleResponsive>
         <Typography.Text view="primary-medium">
-          Каждый бургер на счету! Хотите узнать, как выгоднее покупать еду в кафе и ресторанах?
+          Добавьте к выплатам 10&nbsp;000&nbsp;₽ в месяц — и освободитесь от ипотеки на 10 лет раньше
         </Typography.Text>
-        <img src={burger} width="100%" height={300} alt="burger" style={{ objectFit: 'contain' }} />
+        <img src={home} width="100%" height={314} alt="home" style={{ objectFit: 'contain', objectPosition: 'right' }} />
       </div>
       <Gap size={96} />
 
