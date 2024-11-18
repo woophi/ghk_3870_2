@@ -12,9 +12,9 @@ export const App = () => {
   const [thxShow, setThx] = useState(LS.getItem(LSKeys.ShowThx, false));
 
   const submit = useCallback(() => {
+    window.gtag('event', '3870_interesting_click_v2');
     setLoading(true);
-
-    // LS.setItem(LSKeys.ShowThx, true);
+    LS.setItem(LSKeys.ShowThx, true);
     setThx(true);
     setLoading(false);
   }, []);
